@@ -19,6 +19,7 @@ import Industria from "./pages/segments/Industria";
 import Contact from "./pages/Contact";
 import Differentials from "./pages/Differentials";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
@@ -31,7 +32,8 @@ const App = () => (
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/servicos" element={<Services />} />
           <Route path="/servicos/consultoria" element={<Consultoria />} />
