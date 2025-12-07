@@ -33,6 +33,7 @@ const App = () => (
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/v0" element={<Index />} />
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<About />} />
           <Route path="/servicos" element={<Services />} />
